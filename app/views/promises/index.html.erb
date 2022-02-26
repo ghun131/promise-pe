@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Promises</h1>
+
+<div id="promises">
+  <% @promises.each do |promise| %>
+    <%= render promise %>
+    <p>
+      <%= link_to "Show this promise", promise %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New promise", new_promise_path %>
