@@ -14,7 +14,7 @@ class MediaTest < ApplicationSystemTestCase
     visit media_url
     click_on "New medium"
 
-    fill_in "Type", with: @medium.type
+    fill_in "Media type", with: @medium.media_type
     fill_in "Url", with: @medium.url
     click_on "Create Medium"
 
@@ -26,7 +26,7 @@ class MediaTest < ApplicationSystemTestCase
     visit medium_url(@medium)
     click_on "Edit this medium", match: :first
 
-    fill_in "Type", with: @medium.type
+    fill_in "Media type", with: @medium.media_type
     fill_in "Url", with: @medium.url
     click_on "Update Medium"
 

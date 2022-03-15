@@ -2,8 +2,8 @@
 
 one:
   url: MyString
-  type: 
+  media_type: MyString
 
 two:
   url: MyString
-  type: 
+  media_type: MyString
